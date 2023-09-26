@@ -7,7 +7,7 @@ c - (KEY) in DatastoreGC.
 
 ### RxJS:
 
-#### MAP
+#### (MAP)
 
 ##### definition - This function is going to edit each element in the observable and return the values in observable.
 
@@ -18,7 +18,7 @@ c - (KEY) in DatastoreGC.
 
 **Return** - observable values
 
-#### MergeMAP
+#### (MergeMAP)
 
 ##### definition - the function is going to project each value of observable and merge all otputing them
 
@@ -29,7 +29,7 @@ c - (KEY) in DatastoreGC.
 **concurrent**: default infinity descripes the number of observable values to be inputed.\
 **Return**: observable values.
 
-#### SwitchMAP
+#### (SwitchMAP)
 
 ##### definition - the function is going to project each value of observable and emit only the most recent edited value(last value).
 
@@ -39,7 +39,7 @@ c - (KEY) in DatastoreGC.
 **resultSelector:** default undefined.\
 **Return:** most recently edited value.
 
-#### forkJoin
+#### (forkJoin)
 
 ##### definition - this function accepts an array of observables and return observable of last value of each stream.
 
@@ -48,7 +48,7 @@ c - (KEY) in DatastoreGC.
 **args:** array of observables.\
 **Return:** last value in each passed observable.
 
-#### throwError
+#### (throwError)
 
 ##### definition - this function creates an observable and from it create error and return error to user upon subscription.
 
@@ -59,7 +59,7 @@ c - (KEY) in DatastoreGC.
 
 ### NestJS
 
-#### HTTPEXCEPTION
+#### (HTTPEXCEPTION)
 
 ##### definition - a class exposed from @nest/common package that work with API's
 
@@ -73,7 +73,7 @@ they are used instead of using HTTPEXCEPTION we use this builtin depending on th
 
 ### DataStore
 
-#### KEY
+#### (KEY)
 
 ##### definition - the key is the identifier that must be unique and used to identify the mysql database as in sql
 
