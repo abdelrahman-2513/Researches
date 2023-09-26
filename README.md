@@ -1,9 +1,9 @@
 # Research1
 
-Is about several points:
+Is about several points:\
 a - (MAP, SwitchMAP, MergeMAP, throwError, ForkJOIN) in RXJS.\
-b - (HTTPEXCEPTION) in NestJS.
-c - (KEY) in DatastoreGC.
+b - (HTTPEXCEPTION) in NestJS.\
+c - (KEY) in DatastoreGC.\
 
 ### RxJS:
 
@@ -13,10 +13,10 @@ c - (KEY) in DatastoreGC.
 
 ##### prototype - map (project_function, this (optional))
 
-**project_function:** is the function that is applied for each value of stream.
-**this:** is optional define what this is in project_function.
+**project_function:** is the function that is applied for each value of stream.\
+**this:** is optional define what this is in project_function.\
 
-**Return** - observable values
+**Return** - observable values\
 
 #### MergeMAP
 
@@ -24,10 +24,10 @@ c - (KEY) in DatastoreGC.
 
 ##### prototype - mergeMap (project_function, resultSelector, concurrent)
 
-**project_function** - is the function that is applied for each value of stream.
-**resultSelector**: default undefined.
-**concurrent**: default infinity descripes the number of observable values to be inputed.
-**Return**: observable values.
+**project_function** - is the function that is applied for each value of stream.\
+**resultSelector**: default undefined.\
+**concurrent**: default infinity descripes the number of observable values to be inputed.\
+**Return**: observable values.\
 
 #### SwitchMAP
 
@@ -35,9 +35,9 @@ c - (KEY) in DatastoreGC.
 
 ##### prototype - switchMap (project_function, resultSelector)
 
-**project_function**- is the function that is applied for each value of stream.
-**resultSelector:** default undefined.
-**Return:** most recently edited value.
+**project_function**- is the function that is applied for each value of stream.\
+**resultSelector:** default undefined.\
+**Return:** most recently edited value.\
 
 #### forkJoin
 
@@ -45,8 +45,8 @@ c - (KEY) in DatastoreGC.
 
 ##### prototype - forkJoin(args)
 
-**args:** array of observables.
-**Return:** last value in each passed observable
+**args:** array of observables.\
+**Return:** last value in each passed observable.\
 
 #### throwError
 
@@ -54,8 +54,8 @@ c - (KEY) in DatastoreGC.
 
 ##### prototype - throwError(errorFactory).
 
-**errorFactory:** the error contains the error message
-**Return:** error upon subscription.
+**errorFactory:** the error contains the error message.\
+**Return:** error upon subscription.\
 
 ### NestJS
 
@@ -65,8 +65,8 @@ c - (KEY) in DatastoreGC.
 
 ##### prototype - HTTPEXCEPTION(err_message, status_code)
 
-**err_message:** is a message sent as response to the client (ex: login failed)
-**status_code:** the code of header of site.
+**err_message:** is a message sent as response to the client (ex: login failed).\
+**status_code:** the code of header of site.\
 
 **!important** HTTPEXCEPTION include builtins that can be used as BADREQUESTEXCEPTION, UNNAUTHORIZEDEXCEPTION and etc
 they are used instead of using HTTPEXCEPTION we use this builtin depending on the error type.
@@ -77,7 +77,7 @@ they are used instead of using HTTPEXCEPTION we use this builtin depending on th
 
 ##### definition - the key is the identifier that must be unique and used to identify the mysql database as in sql
 
-**to define ex:** const key = Datastore.key({path:[kind, id]});
-**to define nameKey ex:** const nameKey = Datastore.key({path:[kind, name]});
-
+**to define ex:** const key = Datastore.key({path:[kind, id]});\
+**to define nameKey ex:** const nameKey = Datastore.key({path:[kind, name]});\
+\
 where this key is then added to the data of entity and inserted to the database.
