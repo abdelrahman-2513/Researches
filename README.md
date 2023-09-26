@@ -1,7 +1,7 @@
 # Research1
 
 Is about several points:
-a - (MAP, SwitchMAP, MergeMAP, throwError, ForkJOIN) in RXJS.\n
+a - (MAP, SwitchMAP, MergeMAP, throwError, ForkJOIN) in RXJS.< /br>
 b - (HTTPEXCEPTION) in NestJS.
 c - (KEY) in DatastoreGC.
 
