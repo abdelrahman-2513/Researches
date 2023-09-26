@@ -14,7 +14,7 @@ c - (KEY) in DatastoreGC.
 ##### prototype - map (project_function, this (optional))
 
 **project_function:** is the function that is applied for each value of stream.\
-**this:** is optional define what this is in project_function.\
+**this:** is optional define what this is in project_function.
 
 **Return** - observable values
 
