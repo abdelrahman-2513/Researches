@@ -3,7 +3,7 @@
 Is about several points:\
 a - (MAP, SwitchMAP, MergeMAP, throwError, ForkJOIN) in RXJS.\
 b - (HTTPEXCEPTION) in NestJS.\
-c - (KEY) in DatastoreGC.\
+c - (KEY) in DatastoreGC.
 
 ### RxJS:
 
@@ -16,7 +16,7 @@ c - (KEY) in DatastoreGC.\
 **project_function:** is the function that is applied for each value of stream.\
 **this:** is optional define what this is in project_function.\
 
-**Return** - observable values\
+**Return** - observable values
 
 #### MergeMAP
 
@@ -27,7 +27,7 @@ c - (KEY) in DatastoreGC.\
 **project_function** - is the function that is applied for each value of stream.\
 **resultSelector**: default undefined.\
 **concurrent**: default infinity descripes the number of observable values to be inputed.\
-**Return**: observable values.\
+**Return**: observable values.
 
 #### SwitchMAP
 
@@ -37,7 +37,7 @@ c - (KEY) in DatastoreGC.\
 
 **project_function**- is the function that is applied for each value of stream.\
 **resultSelector:** default undefined.\
-**Return:** most recently edited value.\
+**Return:** most recently edited value.
 
 #### forkJoin
 
@@ -46,7 +46,7 @@ c - (KEY) in DatastoreGC.\
 ##### prototype - forkJoin(args)
 
 **args:** array of observables.\
-**Return:** last value in each passed observable.\
+**Return:** last value in each passed observable.
 
 #### throwError
 
@@ -55,7 +55,7 @@ c - (KEY) in DatastoreGC.\
 ##### prototype - throwError(errorFactory).
 
 **errorFactory:** the error contains the error message.\
-**Return:** error upon subscription.\
+**Return:** error upon subscription.
 
 ### NestJS
 
@@ -66,7 +66,7 @@ c - (KEY) in DatastoreGC.\
 ##### prototype - HTTPEXCEPTION(err_message, status_code)
 
 **err_message:** is a message sent as response to the client (ex: login failed).\
-**status_code:** the code of header of site.\
+**status_code:** the code of header of site.
 
 **!important** HTTPEXCEPTION include builtins that can be used as BADREQUESTEXCEPTION, UNNAUTHORIZEDEXCEPTION and etc
 they are used instead of using HTTPEXCEPTION we use this builtin depending on the error type.
