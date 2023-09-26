@@ -15,6 +15,7 @@ c - (KEY) in DatastoreGC.
 
 **project_function:** is the function that is applied for each value of stream.
 **this:** is optional define what this is in project_function.
+
 **Return** - observable values
 
 #### MergeMAP
